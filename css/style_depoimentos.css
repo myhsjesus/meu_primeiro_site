@@ -1,0 +1,53 @@
+/* Define margem zero para o corpo do documento e usa a fonte Arial ou sans-serif como padrão */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: large;
+    background: #7dc5b2;
+    background: linear-gradient(90deg, #7dc5b2 0%, #b8e0d6b0 50%, #7dc5b2 100%);
+}
+/*Estilizar o Titulo da pagina*/
+h1{
+    text-align: center;
+}
+/* Estilizar classe "depoimentos" como um grid, onde
+as colunas se ajustem automaticamente com o tamanho minimo de 300px.*/
+.depoimentos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px; /* Define um espaçamento entre os elementos */
+    padding: 20px; /* Define um espaço de preenchimento ao redor do grid */
+}
+/* Estiliza a classe "Depoimento", adicionando uma borda vermelha, espaçamento interno e usando um layout flex vertical */
+.depoimento {
+    border: 2px solid #1b6656; /* Adiciona uma borda vermelha de 1 pixel de largura */
+    border-radius: 15px;
+    padding: 20px; /* Define um espaço de preenchimento interno de 20 pixels */
+    display: flex; /* Aplica o layout flex para os elementos dentro da classe */
+    flex-direction: column; /* Organiza os itens em coluna (verticalmente) */
+    align-items: center; /* Centraliza os itens verticalmente */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+/* Estiliza as imagens dentro da classe "Depoimento", ajustando o tamanho, borda arredondada e margem inferior */
+.depoimento img {
+    width: 100px; /* Define a largura da imagem como 100 pixels */
+    height: 100px; /* Define a altura da imagem como 100 pixels */
+    border-radius: 50%; /* Adiciona uma borda arredondada, criando um círculo */
+    margin-bottom: 10px; /* Define uma margem inferior de 10 pixels */
+}
+/* Define margens zero para o parágrafo dentro da classe "Depoimento", com uma margem inferior adicional */
+.depoimento p {
+    margin: 0; /* Remove todas as margens do parágrafo */
+    margin-bottom: 10px; /* Adiciona uma margem inferior de 10 pixels */
+}
+/* Estiliza o elemento <span> dentro da classe "Depoimento" com negrito */
+.depoimento span {
+    font-weight: bold; /* Define o texto do elemento <span> como negrito */
+}
+/* Estilos aplicados quando a largura da tela for igual ou inferior a 768px */
+@media (max-width: 768px) {
+/* Ajusta o grid para ter uma única coluna, ocupando todo o espaço disponível */
+    .depoimento {
+        grid-template-columns: 1fr; /* Define uma única coluna no grid */
+}
+}
