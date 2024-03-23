@@ -1,15 +1,43 @@
+
+/*Estilos padrões do corpo do site*/
+body{
+    background: #478d83;
+    background: linear-gradient(90deg, #478d83 0%, #98d1c8c7 50%, #478d83 100%);
+}
 /* Define margem zero para o corpo do documento e usa a fonte Arial ou sans-serif como padrão */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto';
     font-size: large;
-    background: #7dc5b2;
-    background: linear-gradient(90deg, #7dc5b2 0%, #b8e0d6b0 50%, #7dc5b2 100%);
+}
+.home{
+    position: absolute;
+    margin-left: 2%;
+    background-color: transparent;
+    max-width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+}
+.home img{
+    max-width: 35px;
+}
+.home:hover{
+    background-color: #2269605b;
 }
 /*Estilizar o Titulo da pagina*/
 h1{
     text-align: center;
 }
+/*Estilização do sobre*/
+#about{
+    text-align: center;
+    color: #133f39;
+    font-size: 1.15rem;
+    border: 1px solid #226960;
+    padding: 20px;
+    box-shadow: 0 2px 4px #133f39;
+  }
 /* Estilizar classe "depoimentos" como um grid, onde
 as colunas se ajustem automaticamente com o tamanho minimo de 300px.*/
 .depoimentos{

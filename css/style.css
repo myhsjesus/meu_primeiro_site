@@ -198,30 +198,46 @@ flex-direction: column;
 border-bottom: 2px solid #226960;
 font-size: large;
 }
-/*Rodapé */
 
-footer {
+.topo{
+  padding: 2%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-decoration: none; 
 }
 
-footer a:link, a:visited {
-  background-color: #6bb0a479;
-  color:#133f39;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+#myBtn {
+display: none;
+position: fixed;
+max-width: 50px;
+bottom: 3%;
+right: 2%;
+z-index: 9999;
+border: none;
+outline: none;
+background-color: transparent;
+color: white;
+cursor: pointer;
+padding: 1%;
+border-radius: 45px;
+border: 1px solid #fff;
 }
-footer a:hover, a:active {
-  background-color: #98d1c8c7;
+
+#myBtn:hover {
+background-color: #2269605b;
+border: 1px solid #fff;
+transform: scale(1.1);
 }
 
 footer {
-  line-height: 20px;
-  height: 10px;
+  color: #0f0f0f;
   text-align: center;
-  color: #133f39b4;
+  padding: 2% 0;
 }
+
 /*Estilos aplicados quando a largula da tela é de no mínimo 768px*/
 @media(max-width:768px){
   .card-container{
