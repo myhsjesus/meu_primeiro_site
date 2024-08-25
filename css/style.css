@@ -132,79 +132,6 @@ flex-direction: column;
 align-items: center;
 padding: 5%;
 }
-/*Estilização da aba contato*/
-.contato{
-  display: flex;
-  flex-direction: column;
-  align-items: auto;
-  padding: 30px;
-  }
-  
-.contato div{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-  
-.contato div img{
-  max-width: 100px;
-  height: 50px;
-}
-  
-.contato{
-  display: grid;
-  padding: 5%;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: 'title title'
-                       'phone mail';
-}
-.contato div{
-display: flex;
-flex-direction: column;
-
-}
-.title{
-grid-area: title;
-display: flex;
-flex-direction: row;
-align-items: center;
-font-size: 1.5rem;
-}
-.phone{
-grid-area: phone;
-display: flex;
-flex-direction: row;
-align-items: center;
-}
-.phone img{
-max-width: 30px;
-margin: 1%;
-}
-.mail img{
-max-width: 30px;
-margin: 1%;
-}
-.mail{
-grid-area: mail;
-display: flex;
-flex-direction: row;
-align-items: auto;
-}    
-#contato p{
-  font-size: 15px;
-}
-#contato p a{
-text-decoration: none;
-color: #0f312d;
-text-align: center;
-flex-direction: column;
-}
-#contato p a:hover{
-border-bottom: 2px solid #226960;
-font-size: large;
-}
 
 .topo{
   padding: 2%;
@@ -250,4 +177,45 @@ footer {
   .card-container{
       grid-template-columns: 1fr;
   }
+}
+@media screen and (max-width: 768px){
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    color: #00CA76;
+  }
+  p {
+      font-size: 0.8rem;
+  }
+  nav {
+    justify-content:center;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .logo {
+    display: none;
+  }
+  .menu {
+    flex-direction: row;
+  
+  }
+  .menu ul li{
+      margin-top: 0.5rem; /* Adiciona margem superior à lista de navegação. */
+      justify-content: center; /* Alinha os itens da lista de navegação ao centro. */
+  } 
+  .inicio h1{
+    font-size: 1.5rem;
+  }
+  .inicio h3{
+    font-size: 1.3rem;
+  }
+  .hino-video{
+    max-width: 768px;
+  }
+  #myBtn {
+    max-width: 35px;;
+    }
+
 }

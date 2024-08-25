@@ -85,10 +85,42 @@ footer {
     text-align: center;
     padding: 1% 0;
   }
-/* Estilos aplicados quando a largura da tela for igual ou inferior a 768px */
-@media (max-width: 768px) {
-/* Ajusta o grid para ter uma única coluna, ocupando todo o espaço disponível */
-    .depoimento {
-        grid-template-columns: 1fr; /* Define uma única coluna no grid */
-}
-}
+/*Estilos aplicados quando a largula da tela é de no mínimo 768px*/
+@media(max-width:768px){
+    .card-container{
+        grid-template-columns: 1fr;
+    }
+  }
+  @media screen and (max-width: 768px){
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto';
+      color: #00CA76;
+    }
+    #about{
+        font-size: 1.1rem;
+      }
+    p {
+        font-size: 0.8rem;
+    }
+
+    span {
+        font-size: 0.9rem;    
+    }
+
+    .home{
+        margin-top: 1%;
+        margin-left: 3%;
+        border: none
+    }
+    .home img{
+        max-width: 30px;
+        height: 15px
+    }
+    #myBtn {
+      max-width: 35px;;
+      }
+  
+  }
