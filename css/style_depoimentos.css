@@ -1,18 +1,24 @@
 
 /*Estilos padrões do corpo do site*/
 body{
-    background: #478d83;
-    background: linear-gradient(90deg, #478d83 0%, #98d1c8c7 50%, #478d83 100%);
+    background: #000B07;
 }
-/* Define margem zero para o corpo do documento e usa a fonte Arial ou sans-serif como padrão */
-body {
+/* Define margem zero para o corpo do documento e usa a fonte roboto como padrão */
+*{
     margin: 0;
     font-family: 'Roboto';
+    color: #00CA76;
     font-size: large;
+}
+.title {
+    color: #23674e;
+    font-size: 1.15rem;
+    padding: 15px;
 }
 .home{
     position: absolute;
     margin-left: 2%;
+    margin-top: 4.5%;
     background-color: transparent;
     max-width: 50px;
     height: 50px;
@@ -32,7 +38,7 @@ h1{
 /*Estilização do sobre*/
 #about{
     text-align: center;
-    color: #133f39;
+    color: #fff;
     font-size: 1.15rem;
     border: 1px solid #226960;
     padding: 20px;
@@ -72,6 +78,13 @@ as colunas se ajustem automaticamente com o tamanho minimo de 300px.*/
 .depoimento span {
     font-weight: bold; /* Define o texto do elemento <span> como negrito */
 }
+.image img{
+    max-width: 100%;
+}
+footer {
+    text-align: center;
+    padding: 1% 0;
+  }
 /* Estilos aplicados quando a largura da tela for igual ou inferior a 768px */
 @media (max-width: 768px) {
 /* Ajusta o grid para ter uma única coluna, ocupando todo o espaço disponível */

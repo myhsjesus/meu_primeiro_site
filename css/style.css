@@ -4,16 +4,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto';
+  color: #00CA76;
 }
 /*Estilos padrões do corpo do site*/
 body{
-  background: #478d83;
-  background: linear-gradient(90deg, #478d83 0%, #98d1c8c7 50%, #478d83 100%);
+  background: #000B07;
 }
 nav {
-  background: #478d83;
-  background: linear-gradient(90deg, #478d83 0%, #98d1c8c7 50%, #478d83 100%);
-  border: 2px solid #133f39;
+  background: #000B07;
   color: #fff;
   display: flex;
   align-items: center;
@@ -74,11 +72,20 @@ padding: 20px;
   color: #ffffff;
   background-color: #133f398a;
 }
+/*Estilização da descrição*/
+.description{
+  text-align: center;
+  color: #1a5d54;
+  font-size: 1.25rem;
+  border: 1px solid #226960;
+  padding: 20px;
+  box-shadow: 0 2px 4px #133f39;
+}
 /*Estilização do sobre*/
 #about{
   text-align: center;
-  color: #133f39;
-  font-size: 1.25rem;
+  color: #298779;
+  font-size: 1.05rem;
   border: 1px solid #226960;
   padding: 20px;
   box-shadow: 0 2px 4px #133f39;
